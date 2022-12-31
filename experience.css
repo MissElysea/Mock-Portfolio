@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "Better Yesterday";
+    src: url("./better_yesterday/Better\ Yesterday.otf")
+}
+
+@font-face {
+    font-family: "Champagne & Limousines";
+    src: url("./Champagne\ &\ Limousines\ Champagne & Limousines.ttf");
+}
+/* Background */
+
+html, body {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  font: 0.9em/1.2 "Champagne & Limousines";
+  background: radial-gradient(#a23982,#1f1013);
+}
+
+
+/* Navigation */
+
+nav .logo {
+  font-family: "Better Yesterday";
+  font-size: 50px;
+  display: flex;
+  margin-right: auto;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+nav .crumb {
+  font-size: 15px;
+  align-items: center;
+  display: inline;
+  margin-left: auto;
+  font-family: "Champagne & Limousines";
+}
+
+
+nav {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      display: flex;
+      background-color: black;
+  }
+
+
+a {
+  float: right;
+  display: inline;
+  text-align: center;
+  padding: 15px 18px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+}
+
+a:active {
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+}
+
+.button {
+  display:block;
+  height: 10px;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid white;
+  border-radius: 16px;
+  margin: 4px 2px;
+  box-shadow: 5px 10px 18px rgb(255, 255, 255);
+}
+
+/* Image Gallery */
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-family: "Better Yesterday";
+    margin-top: 100px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.image-gallery {
+    display: flex;
+    margin-top: 100px;
+  }
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+.image-gallery > li {
+    flex-basis: 350px; /* width: 350px; */
+  }
+  
+.image-gallery li img {
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 5px;
+  }
+
+.image-gallery::after {
+    content: "";
+    flex-basis: 350px;
+  }
+
